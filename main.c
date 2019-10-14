@@ -41,9 +41,11 @@ int main(int argc, char *argv[]) {
 	node.top = NULL;
 	node.size = 0;
 	
-	ListStackNode * pnode = pushByList( &node , 3 );
+	pushByList( &node , 3 );
+	pushByList( &node , 4 );
+	pushByList( &node , 5 );
 	
-	displayByList( pnode );
+	displayByList( &node );
 	
 //	int index;
 //	for( index = 0 ; index < 1; index ++ ){

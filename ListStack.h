@@ -1,10 +1,10 @@
-typedef struct ListStackData{
+typedef struct _ListStackData{
 	int data;
-	struct ListStackData * next;
-};
+	struct _ListStackData * next;
+} ListStackData;
 
-typedef struct ListStackNode{
-	struct ListStackData * top;
+typedef struct _ListStackNode{
+	ListStackData * top;
 	int size;
 } ListStackNode ;
 
@@ -14,8 +14,8 @@ int isFullByList(  ListStackNode * const node );
 
 int sizeByList(  ListStackNode * const node );
 
-ListStackNode * pushByList(  ListStackNode * const node , int e);
+int pushByList(  ListStackNode *  node , int e);
 
-int popByList(  ListStackNode * const node );
+int popByList(  ListStackNode *  node );
 
-void displayByList( ListStackNode * const node );
+void displayByList( ListStackNode *  node );
